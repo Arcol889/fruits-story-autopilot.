@@ -1,0 +1,11 @@
+{
+  "timezone": "Europe/Paris",
+  "drive_source_folder_id": "1O3GH74aiARAW4gkWC3AVRMCPBaCAPauL",
+  "start_episode": 14,
+  "start_date": "2026-12-08",
+  "post_hour": 15,
+  "post_minute": 0,
+  "max_buffer_pending": 9,
+  "max_episodes_per_run": 9,
+  "youtube_made_for_kids": false
+}

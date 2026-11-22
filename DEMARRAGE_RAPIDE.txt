@@ -1,0 +1,35 @@
+FRUITS STORY AUTOPILOT — DÉMARRAGE RAPIDE
+========================================
+État le 22 novembre 2026 : moteur prêt, six tests réussis, publication DÉSACTIVÉE.
+
+OBJECTIF : déposer deux clips A/B dans Google Drive, puis laisser le système
+assembler un MP4 et programmer Instagram + TikTok + YouTube à 15 h via Buffer.
+
+1) Créer un compte Buffer gratuit : https://buffer.com
+   Connecter tes trois réseaux et récupérer ta clé API personnelle.
+2) Créer un compte Cloudinary gratuit : https://cloudinary.com
+   Récupérer CLOUDINARY_URL dans tes informations développeur.
+3) Dans Google Cloud Console, activer Drive API, créer un compte de service et sa
+   clé JSON. Partager ton dossier Drive « 01 — Clips à monter » en Lecture avec
+   l'adresse email de ce compte de service.
+4) Créer un dépôt PRIVÉ sur GitHub : https://github.com/new
+   Nom conseillé : fruits-story-autopilot. Y déposer tous les fichiers du ZIP,
+   y compris .github/workflows/fruits-autopilot.yml.
+5) GitHub → Settings → Secrets and variables → Actions :
+   Secrets : GOOGLE_SERVICE_ACCOUNT_JSON, BUFFER_API_KEY, CLOUDINARY_URL.
+   Variable : PUBLISH_ENABLED=false.
+6) GitHub → Actions → Fruits Story - Montage et publications → Run workflow.
+   Vérifier la simulation (aucune publication créée).
+7) Après avoir vérifié les trois réseaux et le réglage YouTube « made for kids »
+   dans config.json : passer PUBLISH_ENABLED=true. Ne le faire que lorsque
+   l'activation est souhaitée.
+8) Dans Google Drive, ajouter FRUITS_EP014_A.mp4 + FRUITS_EP014_B.mp4.
+   Le programme se déclenche chaque matin et programme les prochaines places.
+
+Important : les 13 épisodes précédents restent sur Metricool, sans changement.
+Les clips à partir de l'épisode 14 n'existent pas encore dans le dossier partagé.
+Le plan gratuit de Buffer limite 10 publications EN ATTENTE PAR RÉSEAU et non
+20 publications par mois. Les places se libèrent après publication.
+
+Lire README.md pour les précisions, limites et problèmes courants.
+Ne jamais transmettre de secrets API ou JSON du compte de service dans le chat.
